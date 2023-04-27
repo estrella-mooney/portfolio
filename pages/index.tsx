@@ -35,7 +35,6 @@ export default function Home() {
           <section className="mb-24 sm:mb-16">
             <nav className="py-10 mb-4 flex justify-between  dark:text-white">
               <h1 className="font-semibold text-2xl">Estrella</h1>
-
               <ul className="flex items-center">
                 <li>
                   <BsFillMoonStarsFill
@@ -68,9 +67,8 @@ export default function Home() {
 
           <section className="grid lg:grid-cols-2 gap-10 mb-36 sm:mb-16">
             <div className="w-96 sm:text-center sm:max-w-xs">
-              <h2 className="text-4xl font-bold mb-6">
-                Hey, I&apos;m Estrella
-              </h2>
+              <p className=" font-bold mb-3 text-green-800">Hi, my name is</p>
+              <h1 className="mb-3 rainbow-text text-4xl">Estrella Mooney</h1>
               <p className="mb-3">
                 highs nksd sdlng sdngskdgn dsngslg nskng highs nksd sdlng
                 sdngskdgn dsngslg nskng highs nksd sdlng sdngskdgn dsngslg nskng
