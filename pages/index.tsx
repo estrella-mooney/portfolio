@@ -13,11 +13,12 @@ import design from '../public/cute.png'
 import consulting from '../public/cute.png'
 import Image from 'next/image'
 import web1 from '../public/cute.png'
-import web2 from '../public/cute.png'
-import web3 from '../public/cute.png'
+import web2 from '../public/desk.png'
+import web3 from '../public/me.png'
 import web4 from '../public/cute.png'
 import web5 from '../public/cute.png'
 import web6 from '../public/cute.png'
+import me1 from '../public/me1.png'
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false)
@@ -31,89 +32,71 @@ export default function Home() {
       </Head>
       {/* <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40"> */}
       <main className=" bg-white px-10 dark:bg-gray-900  min-h-screen md:px-28 lg:px-48 xl:px-60 2xl:px-7">
-        <section className="min-h-screen">
-          <section className="mb-24 sm:mb-16">
-            <nav className="py-10 mb-4 flex justify-between  dark:text-white">
-              <h1 className="font-semibold text-2xl">Estrella</h1>
-              <ul className="flex items-center">
-                <li>
-                  <BsFillMoonStarsFill
-                    onClick={() => setDarkMode(!darkMode)}
-                    className=" cursor-pointer text-2xl"
-                  />
-                </li>
-              </ul>
-            </nav>
-            <nav className="flex justify-start sm:flex-col">
-              <ul className="flex sm:justify-evenly">
-                <li className="font-medium mr-8 sm:mr-0 transition ease-in-out hover:underline hover:duration-75">
-                  <a href="https://github.com/estrella-mooney" target="_blank">
-                    Github
-                  </a>
-                </li>
-                <li className="font-medium mr-8 sm:mr-0 transition ease-in-out hover:underline hover:duration-75">
-                  <a href="https://github.com/estrella-mooney" target="_blank">
-                    Email
-                  </a>
-                </li>
-                <li className="font-medium mr-8 sm:mr-0 transition ease-in-out hover:underline hover:duration-75">
-                  <a href="https://github.com/estrella-mooney" target="_blank">
-                    LinkedIn
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </section>
+        {/* <section className="min-h-screen"> */}
+        <section className="mb-24 sm:mb-16">
+          <nav className="py-10 mb-4 flex justify-between  dark:text-white">
+            <h1 className="font-semibold text-2xl">Estrella</h1>
+            <ul className="flex items-center">
+              <li>
+                <BsFillMoonStarsFill
+                  onClick={() => setDarkMode(!darkMode)}
+                  className=" cursor-pointer text-2xl"
+                />
+              </li>
+            </ul>
+          </nav>
+          <nav className="flex justify-start sm:flex-col">
+            <ul className="flex sm:justify-evenly">
+              <li className="font-medium mr-8 sm:mr-0 transition ease-in-out hover:underline hover:duration-75">
+                <a href="https://github.com/estrella-mooney" target="_blank">
+                  Github
+                </a>
+              </li>
+              <li className="font-medium mr-8 sm:mr-0 transition ease-in-out hover:underline hover:duration-75">
+                <a href="https://github.com/estrella-mooney" target="_blank">
+                  Email
+                </a>
+              </li>
+              <li className="font-medium mr-8 sm:mr-0 transition ease-in-out hover:underline hover:duration-75">
+                <a href="https://github.com/estrella-mooney" target="_blank">
+                  LinkedIn
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
 
-          <section className="grid lg:grid-cols-2 gap-10 mb-36 sm:mb-16">
-            <div className="w-96 sm:text-center sm:max-w-xs">
-              <p className=" font-bold mb-3 text-green-800">Hi, my name is</p>
-              <h1 className="mb-3 rainbow-text text-4xl">Estrella Mooney</h1>
+        <section className="grid lg:grid-cols-2 gap-10 mb-36 sm:mb-16">
+          <div className="w-96 sm:text-center sm:max-w-xs">
+            <p className=" font-bold mb-3 text-green-800">Hi, my name is</p>
+            <h1 className="mb-3 rainbow-text ">Estrella Mooney</h1>
+            <div className=" dark:text-white">
               <p className="mb-3">
-                highs nksd sdlng sdngskdgn dsngslg nskng highs nksd sdlng
-                sdngskdgn dsngslg nskng highs nksd sdlng sdngskdgn dsngslg nskng
-                highs nksd sdlng sdngskdgn dsngslg nskng highs nksd sdlng
+                I&apos;m a software developer based in New Zealand. I just
+                finished a 17 week Full Stack Software Developer bootcam @ Dev
+                Academy Aotearoa
               </p>
               <p className="mb-3">
-                highs nksd sdlng sdngskdgn dsngslg nskng highs nksd sdlng
-                sdngskdgn dsngslg nskng highs nksd sdlng sdngskdgn dsngslg nskng
-                highs nksd sdlng sdngskdgn dsngslg nskng highs nksd sdlng
+                I&apos;m mad about the outdoors, and any free time I get you can
+                catch me in the mountains.
               </p>
-              <p>
-                <span className="text-accent-blue">JavaScript</span>
-                `,`
-                <span className="text-accent-red">JavaScript</span>
-                highs nksd sdlng sdngskdgn dsngslg nskng highs nksd sdlng
-                sdngskdgn dsngslg nskng highs nksd sdlng sdngskdgn dsngslg nskng
-                highs nksd sdlng sdngskdgn dsngslg nskng highs nksd sdlng
+              <p className="mb-3">
+                I&apos;m ready to dive into the world of development
               </p>
-            </div>
-            <div className="flex justify-center">
-              <Image
-                alt="yes"
-                src={web1}
-                className="md:max-w-sm sm:max-w-xs"
-                loading="lazy"
-              ></Image>
-            </div>
-          </section>
-
-          <div className="text-center p-10 py-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
-              Estrella Mo8
-            </h2>
-            <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
-              Full-Stack Software Developer
-            </h3>
-            <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-              I&apos;m a software developer from New Zealand
-            </p>
-
-            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
-              <Image alt="yes" src={deved} layout="fill" objectFit="cover" />
             </div>
           </div>
+          <div className="flex justify-center">
+            <Image
+              alt="yes"
+              src={me1}
+              className="md:max-w-sm sm:max-w-xs"
+              loading="lazy"
+              width={400}
+              height={400}
+            ></Image>
+          </div>
         </section>
+        {/* </section> */}
 
         <section className="py-10">
           <div>
@@ -168,7 +151,7 @@ export default function Home() {
                 width={400}
                 height={400}
                 layout="responsive"
-                src={web4}
+                src={web6}
               />
             </div>
             <div className="basis-1/3 flex-1">
