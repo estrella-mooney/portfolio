@@ -14,14 +14,17 @@ import consulting from '../public/cute.png'
 import Image from 'next/image'
 import web1 from '../public/cute.png'
 import web2 from '../public/desk.png'
-import web3 from '../public/me.png'
 import web4 from '../public/cute.png'
 import web5 from '../public/cute.png'
 import web6 from '../public/cute.png'
 import me1 from '../public/me1.png'
+import Card from './header'
+
+import Modal from './modal'
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false)
+  const [isOpen, setIsOpen] = useState(false)
 
   return (
     <div className={darkMode ? 'dark' : ''}>
@@ -113,6 +116,18 @@ export default function Home() {
               programming and teaching.
             </p>
           </div>
+
+          <div
+            className="button-wrapper"
+            onClick={() => console.log('clicked')}
+          >
+            <button onClick={() => setIsOpen(true)}>Open Modal</button>
+
+            <Modal open={isOpen} onClose={() => setIsOpen(false)}>
+              Fancy Modal
+            </Modal>
+          </div>
+
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1 ">
               <Image
@@ -141,7 +156,7 @@ export default function Home() {
                 width={400}
                 height={400}
                 layout="responsive"
-                src={web3}
+                src={web1}
               />
             </div>
             <div className="basis-1/3 flex-1">

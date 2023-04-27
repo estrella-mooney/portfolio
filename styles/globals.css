@@ -34,6 +34,7 @@ body {
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+
 body,
 html {
   margin: 0;

@@ -1,29 +1,10 @@
 import { AppProps } from 'next/app'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import desk from '../public/desk.png'
+import Image from 'next/image'
 
-export default function Header() {
+export default function Card() {
   const router = useRouter()
-  return (
-    <>
-      <nav className="header-nav">
-        <ul>
-          <li>
-            <Link className={router.pathname == '/' ? 'active' : ''} href="/">
-              Home
-            </Link>
-          </li>
-
-          <li>
-            <Link
-              className={router.pathname == '/about' ? 'active' : ''}
-              href="/about"
-            >
-              About
-            </Link>
-          </li>
-        </ul>
-      </nav>
-    </>
-  )
+  return <></>
 }
