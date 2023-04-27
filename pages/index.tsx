@@ -20,8 +20,6 @@ import web6 from '../public/cute.png'
 import me1 from '../public/me1.png'
 import Card from './header'
 
-import Modal from './modal'
-
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
@@ -117,17 +115,9 @@ export default function Home() {
             </p>
           </div>
 
-          <div
-            className="button-wrapper"
-            onClick={() => console.log('clicked')}
-          >
-            <button onClick={() => setIsOpen(true)}>Open Modal</button>
-
-            <Modal open={isOpen} onClose={() => setIsOpen(false)}>
-              Fancy Modal
-            </Modal>
+          <div className="grid lg:grid-cols-2 gap-10 sm:gap-5 mb-36">
+            <div className="bg-zinc-50 flex-1 p-7 rounded-lg my-6 max-w-sm hover:shadow-lg transition ease-in-out hover:bg-accent-gold duration-200 hover:text-contrast-white  text-gray-800 dark:text-gray-200 "> 
           </div>
-
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1 ">
               <Image
@@ -139,6 +129,7 @@ export default function Home() {
                 src={web1}
               />
             </div>
+
             <div className="basis-1/3 flex-1">
               <Image
                 alt="yes"
