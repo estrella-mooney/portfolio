@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
+
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -12,7 +14,15 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      textDecoration: {
+        '1underline-offset': 'underline 2px',
+        2: 'underline 2px dotted',
+      },
     },
   },
+  variants: {},
   plugins: [],
+  corePlugins: {
+    textDecoration: true,
+  },
 }
