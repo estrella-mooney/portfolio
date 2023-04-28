@@ -21,6 +21,7 @@ import me1 from '../public/me1.png'
 import me2 from '../public/me2.jpg'
 import me3 from '../public/me3.png'
 import me4 from '../public/me4.png'
+import wanderLust from '../public/wanderLust.png'
 
 import Card from './header'
 
@@ -123,7 +124,7 @@ export default function Home() {
             <div className=" bg-gray-400 flex-1 p-7 rounded-lg my-6 max-w-sm hover:shadow-lg transition ease-in-out hover:bg-gray-400 duration-200 hover:text-contrast-white  text-gray-800 dark:text-gray-200 ">
               <Image
                 alt="yes"
-                src={web2}
+                src={wanderLust}
                 width={400}
                 height={215}
                 decoding="async"
