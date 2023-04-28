@@ -22,6 +22,7 @@ import me2 from '../public/me2.jpg'
 import me3 from '../public/me3.png'
 import me4 from '../public/me4.png'
 import wanderLust from '../public/wanderLust.png'
+import buddy from '../public/buddy.png'
 
 import Card from './header'
 
@@ -52,7 +53,7 @@ export default function Home() {
             </ul>
           </nav>
           <nav className="flex justify-start sm:flex-col">
-            <ul className="flex sm:justify-evenly">
+            <ul className="flex sm:justify-evenly dark:text-gray-300">
               <li className="font-medium mr-8 sm:mr-0 transition ease-in-out hover:underline hover:duration-75">
                 <a href="https://github.com/estrella-mooney" target="_blank">
                   Github
@@ -72,56 +73,45 @@ export default function Home() {
           </nav>
         </section>
 
-        <section className="grid lg:grid-cols-2 gap-10 mb-36 sm:mb-16">
-          <div className="w-96 sm:text-center sm:max-w-xs">
-            <p className=" font-bold mb-3 text-green-800">Hi, my name is</p>
-            <h1 className="mb-3 rainbow-text ">Estrella Mooney</h1>
-            <div className=" dark:text-white">
-              <p className="mb-3">
-                I&apos;m a software developer based in New Zealand. I just
-                finished a 17 week Full Stack Software Developer bootcam @ Dev
-                Academy Aotearoa
-              </p>
-              <p className="mb-3">
-                I&apos;m mad about the outdoors, and any free time I get you can
-                catch me in the mountains.
-              </p>
-              <p className="mb-3">
-                I&apos;m ready to dive into the world of development
-              </p>
+        <section className="bg-white dark:bg-gray-900">
+          <div className="grid max-w-screen-xl px-4 py-8 mx-auto gap-x-8 lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+            <div className="mr-auto place-self-center lg:col-span-7">
+              <p className=" font-bold mb-3 text-teal-500">Hi, my name is</p>
+              <div className=" dark:text-white ">
+                <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
+                  Estrella Mooney
+                </h1>
+                <div className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+                  <p>
+                    I&apos;m a{' '}
+                    <span className="text-teal-500"> software developer </span>
+                    based in New Zealand. I just finished a 17 week Full Stack
+                    Software Developer bootcamp @ Dev Academy Aotearoa
+                  </p>
+                  <p className="mb-3">
+                    I&apos;m mad about the outdoors, and any free time I get you
+                    can catch me in the mountains.
+                  </p>
+                  <p className="mb-3">
+                    I&apos;m ready to dive into the world of development
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
+              <Image src={me4} alt="mockup" />
             </div>
           </div>
-          <div className="flex justify-center">
-            <Image
-              alt="yes"
-              src={me4}
-              className="py-5 md:max-w-sm sm:max-w-xs"
-              loading="lazy"
-              width={400}
-              height={500}
-            ></Image>
-          </div>
         </section>
-        {/* </section> */}
 
         <section className="py-10">
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Portofolio</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Started my journey as a
-              <span className="text-teal-500"> software developer </span>
-              at Dev Academy. And am now ready and{' '}
-              <span className="text-teal-500">excited </span>
-              to get workin!
-            </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I offer from a wide range of services, including brand design,
-              programming and teaching.
-            </p>
+            <p className=" font-bold mb-3 text-teal-500">Personal Projects</p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-10 sm:gap-5 mb-36">
-            <div className=" bg-gray-400 flex-1 p-7 rounded-lg my-6 max-w-sm hover:shadow-lg transition ease-in-out hover:bg-gray-400 duration-200 hover:text-contrast-white  text-gray-800 dark:text-gray-200 ">
+            {/* <div className=" bg-gray-400 flex-1 p-7 rounded-lg my-6 max-w-sm hover:shadow-lg transition ease-in-out hover:bg-gray-400 duration-200 hover:text-contrast-white  text-gray-800 dark:text-gray-200 "> */}
+            <div className=" bg-gray-300 flex-1 p-7 rounded-lg my-6 max-w-sm hover:shadow-lg transition ease-in-out hover:bg-gray-400 duration-200 hover:text-contrast-white  text-gray-800 dark:bg-gray-700 dark:text-gray-300 ">
               <Image
                 alt="yes"
                 src={wanderLust}
@@ -133,8 +123,9 @@ export default function Home() {
               ></Image>
               <h1 className="text-lg font-semibold mb-5">WanderLust</h1>
               <p className="font-light mb-5">
-                A app for this na dih this at this nhg skjsjk
+                A web app for kiwis to keep a record of their bucket list hikes
               </p>
+
               <a href="https://github.com" title="GitHub">
                 <svg
                   aria-hidden="true"
@@ -151,10 +142,10 @@ export default function Home() {
                 </svg>
               </a>
             </div>
-            <div className="flex-1 p-7 rounded-lg my-6 max-w-sm hover:shadow-lg transition ease-in-out hover:bg-accent-gold duration-200 hover:text-contrast-white  text-gray-800 dark:text-gray-200 ">
+            <div className=" bg-gray-300 flex-1 p-7 rounded-lg my-6 max-w-sm hover:shadow-lg transition ease-in-out hover:bg-accent-gold duration-200 hover:text-contrast-white  text-gray-800 dark:bg-gray-700 dark:text-gray-300">
               <Image
                 alt="yes"
-                src={web2}
+                src={buddy}
                 width={400}
                 height={215}
                 decoding="async"
@@ -163,7 +154,9 @@ export default function Home() {
               ></Image>
               <h1 className="text-lg font-semibold mb-5">Buddy</h1>
               <p className="font-light mb-5">
-                A app for this na dih this at this nhg skjsjk
+                An app helping newcomers in Wellington, NZ connect with locals
+                for cultural immersion and guidance. (Final Group project at Dev
+                Academy).
               </p>
               <a href="https://github.com" title="GitHub">
                 <svg
