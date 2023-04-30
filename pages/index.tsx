@@ -89,8 +89,7 @@ export default function Home() {
                     Software Developer bootcamp @ Dev Academy Aotearoa
                   </p>
                   <p className="mb-3">
-                    I&apos;m mad about the outdoors, and any free time I get you
-                    can catch me in the mountains.
+                    I&apos;m mad about the outdoors,atch me in the mountains.
                   </p>
                   <p className="mb-3">
                     I&apos;m ready to dive into the world of development
