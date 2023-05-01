@@ -11,6 +11,7 @@ import Image from 'next/image'
 import me4 from '../public/me4.png'
 import wanderLust from '../public/wanderlust.png'
 import buddy from '../public/buddy.png'
+import desk from '../public/desk.png'
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false)
@@ -24,7 +25,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40"> */}
-      <main className="bg-indigo-100  dark:bg-gray-900  min-h-screen md:px-28 lg:px-48 xl:px-60 2xl:px-7">
+      <main className="bg-indigo-100  dark:bg-gray-900  min-h-screen md:px-28 lg:px-48 xl:px-10 2xl:px-7">
         {/* <section className="min-h-screen"> */}
         <section className="mb-24 sm:mb-16">
           <nav className="py-10 mb-4 flex justify-between  dark:text-white">
@@ -44,7 +45,7 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <nav className="flex justify-start sm:flex-col">
+          {/* <nav className="flex justify-start sm:flex-col">
             <ul className="flex sm:justify-evenly dark:text-gray-300">
               <li className="font-medium mr-8 sm:mr-0 transition ease-in-out hover:underline hover:duration-75">
                 <a href="https://github.com/estrella-mooney" target="_blank">
@@ -66,16 +67,22 @@ export default function Home() {
                 </a>
               </li>
             </ul>
-          </nav>
+          </nav> */}
         </section>
 
         <section className="bg-white dark:bg-gray-900">
-          <div className="grid max-w-screen-xl px-4 py-8 mx-auto gap-x-8 lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-            <div className="mr-auto place-self-center lg:col-span-7">
-              <p className=" font-bold mb-3 text-teal-500">Hi, my name is</p>
+          <div className="grid max-w-screen-xl px-4 py-8 mx-auto gap-x-8 lg:gap-8 xl:gap-0 lg:py-2 lg:grid-cols-12">
+            <div className=" place-self-center lg:col-span-7">
+              {/* <h1 className=" font-bold mb-3 text-teal-500">
+                Hi, my
+                <br />
+                name is <b>Estrella</b>
+              </h1> */}
               <div className=" dark:text-white ">
                 <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
-                  Estrella Mooney
+                  Hi, my
+                  <br />
+                  name is Estrella
                 </h1>
                 <div className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
                   <ul>
@@ -94,7 +101,7 @@ export default function Home() {
               </div>
             </div>
             <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
-              <Image src={me4} alt="smiling" />
+              <Image src={desk} alt="smiling" />
             </div>
           </div>
         </section>
