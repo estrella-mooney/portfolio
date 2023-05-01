@@ -7,24 +7,10 @@ import {
 import Link from 'next/link'
 import { BsFillMoonStarsFill } from 'react-icons/bs'
 import { useState } from 'react'
-import deved from '../public/cute.png'
-import code from '../public/cute.png'
-import design from '../public/cute.png'
-import consulting from '../public/cute.png'
 import Image from 'next/image'
-import web1 from '../public/cute.png'
-import web2 from '../public/desk.png'
-import web4 from '../public/cute.png'
-import web5 from '../public/cute.png'
-import web6 from '../public/cute.png'
-import me1 from '../public/me1.png'
-import me2 from '../public/me2.jpg'
-import me3 from '../public/me3.png'
 import me4 from '../public/me4.png'
-import wanderLust from '../public/wanderLust.png'
+import wanderLust from '../public/wanderlust.png'
 import buddy from '../public/buddy.png'
-
-import Card from './header'
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false)
@@ -108,7 +94,7 @@ export default function Home() {
               </div>
             </div>
             <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
-              <Image src={me4} alt="mockup" />
+              <Image src={me4} alt="smiling" />
             </div>
           </div>
         </section>
