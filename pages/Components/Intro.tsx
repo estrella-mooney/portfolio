@@ -4,7 +4,7 @@ import desk from '../../public/womenWorking.png'
 function Intro() {
   return (
     <>
-      <section className="bg-white dark:bg-gray-900">
+      <section className=" dark:bg-gray-900">
         <div className="grid max-w-screen-xl px-4 py-8 mx-auto gap-x-8 lg:gap-8 xl:gap-0 lg:py-2 lg:grid-cols-12">
           <div className=" place-self-center lg:col-span-7">
             {/* <h1 className=" font-bold mb-3 text-teal-500">
