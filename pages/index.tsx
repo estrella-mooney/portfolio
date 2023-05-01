@@ -1,12 +1,12 @@
 import Head from 'next/head'
-import Link from 'next/link'
+
 import { BsFillMoonStarsFill } from 'react-icons/bs'
 import { useState } from 'react'
 import Intro from './Components/Intro'
 import Projects from './Components/Projects'
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false)
+  const [darkMode, setDarkMode] = useState(true)
   const [isOpen, setIsOpen] = useState(false)
 
   return (

@@ -7,7 +7,10 @@ function Projects() {
     <>
       <section className="py-10">
         <div>
-          <p className=" font-bold mb-3 text-pink-500">Personal Projects</p>
+          <p className=" font-bold mb-3 text-violet-700 dark:text-amber-300">
+            {' '}
+            Projects
+          </p>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-5 sm:gap-5 mb-36">
