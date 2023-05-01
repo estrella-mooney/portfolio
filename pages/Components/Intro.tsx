@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import desk from '../public/desk.png'
+import desk from '../../public/womenWorking.png'
 
 function Intro() {
   return (

@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import wanderLust from '../public/wanderlust.png'
-import buddy from '../public/buddy.png'
+import wanderLust from '../../public/wanderlust.png'
+import buddy from '../../public/buddy.png'
 
 function Projects() {
   return (
