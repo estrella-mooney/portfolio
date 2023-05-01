@@ -43,7 +43,13 @@ export default function Home() {
         <section className="mb-24 sm:mb-16">
           <nav className="py-10 mb-4 flex justify-between  dark:text-white">
             <h1 className="font-semibold text-2xl">Estrella</h1>
+
             <ul className="flex items-center">
+              <li className="pr-5">
+                <a href="../estrella-CV.pdf" target="_blank">
+                  <button>CV</button>
+                </a>
+              </li>
               <li>
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
@@ -129,7 +135,10 @@ export default function Home() {
                 A web app for kiwis to keep a record of their bucket list hikes
               </p>
 
-              <a href="https://github.com" title="GitHub">
+              <a
+                href="https://github.com/estrella-mooney/wanderLust"
+                title="GitHub"
+              >
                 <svg
                   aria-hidden="true"
                   className="octicon octicon-mark-github"
@@ -144,6 +153,14 @@ export default function Home() {
                   ></path>
                 </svg>
               </a>
+              <div className="pt-2">
+                <a
+                  href="https://wanderlust-estrella.devacademy.nz/"
+                  title="Wunderlust"
+                >
+                  <p>View Wunderlust</p>
+                </a>
+              </div>
             </div>
             <div className=" bg-gray-300 dark:hover:bg-gray-600 flex-1 p-7 rounded-lg my-6 max-w-sm hover:shadow-lg transition ease-in-out  duration-200 hover:text-contrast-white  text-gray-800 dark:bg-gray-700 dark:text-gray-300">
               <Image
@@ -161,7 +178,7 @@ export default function Home() {
                 for cultural immersion and guidance. (Final Group project at Dev
                 Academy).
               </p>
-              <a href="https://github.com" title="GitHub">
+              <a href="https://github.com/kahu-2023/buddy" title="GitHub">
                 <svg
                   aria-hidden="true"
                   className="octicon octicon-mark-github"
@@ -176,6 +193,11 @@ export default function Home() {
                   ></path>
                 </svg>
               </a>
+              <div className="pt-2">
+                <a href="https://buddy.devacademy.nz/" title="Buddy">
+                  <p>View Buddy</p>
+                </a>
+              </div>
             </div>
           </div>
         </section>
