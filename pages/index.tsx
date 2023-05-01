@@ -59,13 +59,17 @@ export default function Home() {
                   Github
                 </a>
               </li>
+
               <li className="font-medium mr-8 sm:mr-0 transition ease-in-out hover:underline hover:duration-75">
-                <a href="https://github.com/estrella-mooney" target="_blank">
+                <a href="mailto:thestarshine@protonmail.com" target="_blank">
                   Email
                 </a>
               </li>
               <li className="font-medium mr-8 sm:mr-0 transition ease-in-out hover:underline hover:duration-75">
-                <a href="https://github.com/estrella-mooney" target="_blank">
+                <a
+                  href="https://www.linkedin.com/in/estrella-mooney-698989273/"
+                  target="_blank"
+                >
                   LinkedIn
                 </a>
               </li>
@@ -82,18 +86,18 @@ export default function Home() {
                   Estrella Mooney
                 </h1>
                 <div className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
-                  <p>
-                    I&apos;m a{' '}
-                    <span className="text-teal-500"> software developer </span>
-                    based in New Zealand. I just finished a 17 week Full Stack
-                    Software Developer bootcamp @ Dev Academy Aotearoa
-                  </p>
-                  <p className="mb-3">
-                    I&apos;m mad about the outdoors,atch me in the mountains.
-                  </p>
-                  <p className="mb-3">
-                    I&apos;m ready to dive into the world of development
-                  </p>
+                  <ul>
+                    <li>
+                      I&apos;m a fullstack
+                      <span className="text-teal-500"> developer </span>
+                      based in New Zealand.
+                    </li>
+
+                    <li>
+                      I just finished a 17 week Full Stack Software Developer
+                      bootcamp @ Dev Academy Aotearoa
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -110,7 +114,7 @@ export default function Home() {
 
           <div className="grid lg:grid-cols-2 gap-10 sm:gap-5 mb-36">
             {/* <div className=" bg-gray-400 flex-1 p-7 rounded-lg my-6 max-w-sm hover:shadow-lg transition ease-in-out hover:bg-gray-400 duration-200 hover:text-contrast-white  text-gray-800 dark:text-gray-200 "> */}
-            <div className=" bg-gray-300 flex-1 p-7 rounded-lg my-6 max-w-sm hover:shadow-lg transition ease-in-out hover:bg-gray-400 duration-200 hover:text-contrast-white  text-gray-800 dark:bg-gray-700 dark:text-gray-300 ">
+            <div className=" bg-gray-300 dark:hover:bg-gray-600 flex-1 p-7 rounded-lg my-6 max-w-sm hover:shadow-lg transition ease-in-out duration-200 hover:text-contrast-white  text-gray-800 dark:bg-gray-700 dark:text-gray-300">
               <Image
                 alt="yes"
                 src={wanderLust}
@@ -141,7 +145,7 @@ export default function Home() {
                 </svg>
               </a>
             </div>
-            <div className=" bg-gray-300 flex-1 p-7 rounded-lg my-6 max-w-sm hover:shadow-lg transition ease-in-out hover:bg-accent-gold duration-200 hover:text-contrast-white  text-gray-800 dark:bg-gray-700 dark:text-gray-300">
+            <div className=" bg-gray-300 dark:hover:bg-gray-600 flex-1 p-7 rounded-lg my-6 max-w-sm hover:shadow-lg transition ease-in-out  duration-200 hover:text-contrast-white  text-gray-800 dark:bg-gray-700 dark:text-gray-300">
               <Image
                 alt="yes"
                 src={buddy}
