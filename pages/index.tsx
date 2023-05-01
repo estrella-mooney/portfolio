@@ -12,7 +12,7 @@ import me4 from '../public/me4.png'
 import wanderLust from '../public/wanderlust.png'
 import buddy from '../public/buddy.png'
 import desk from '../public/desk.png'
-import Intro from './something'
+import Intro from './Intro'
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false)
