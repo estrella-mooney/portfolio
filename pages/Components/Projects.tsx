@@ -14,7 +14,7 @@ function Projects() {
         </div>
 
         <div className="grid lg:grid-cols-3 gap-5 sm:gap-5 mb-36">
-          <div className=" bg-gray-300 dark:hover:bg-gray-600 flex-1 p-7 rounded-lg my-6 max-w-sm hover:shadow-lg transition ease-in-out duration-200 hover:text-contrast-white  text-gray-800 dark:bg-gray-700 dark:text-gray-300">
+          <div className=" bg-indigo-200  dark:hover:bg-gray-600 flex-1 p-7 rounded-lg my-6 max-w-sm hover:shadow-lg transition ease-in-out duration-200 hover:text-contrast-white  text-gray-800 dark:bg-gray-700 dark:text-gray-300">
             <Image
               alt="yes"
               src={wanderLust}
@@ -56,7 +56,7 @@ function Projects() {
               </a>
             </div>
           </div>
-          <div className=" bg-gray-300 dark:hover:bg-gray-600 flex-1 p-7 rounded-lg my-6 max-w-sm hover:shadow-lg transition ease-in-out  duration-200 hover:text-contrast-white  text-gray-800 dark:bg-gray-700 dark:text-gray-300">
+          <div className=" bg-indigo-200 dark:hover:bg-gray-600 flex-1 p-7 rounded-lg my-6 max-w-sm hover:shadow-lg transition ease-in-out  duration-200 hover:text-contrast-white  text-gray-800 dark:bg-gray-700 dark:text-gray-300">
             <Image
               alt="yes"
               src={buddy}
@@ -94,7 +94,7 @@ function Projects() {
             </div>
           </div>
 
-          <div className=" bg-gray-300 dark:hover:bg-gray-600 flex-1 p-7 rounded-lg my-6 max-w-sm hover:shadow-lg transition ease-in-out  duration-200 hover:text-contrast-white  text-gray-800 dark:bg-gray-700 dark:text-gray-300">
+          <div className=" bg-indigo-200 dark:hover:bg-gray-600 flex-1 p-7 rounded-lg my-6 max-w-sm hover:shadow-lg transition ease-in-out  duration-200 hover:text-contrast-white  text-gray-800 dark:bg-gray-700 dark:text-gray-300">
             <Image
               alt="yes"
               src={buddy}
