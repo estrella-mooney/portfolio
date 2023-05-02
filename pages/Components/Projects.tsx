@@ -8,7 +8,6 @@ function Projects() {
       <section className="py-10">
         <div>
           <p className=" font-bold mb-3 text-violet-700 dark:text-amber-300">
-            {' '}
             Projects
           </p>
         </div>

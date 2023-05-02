@@ -1,5 +1,4 @@
 import React, { FC } from 'react'
-import '../../styles/ProjectPopup.css'
 
 interface Props {
   title: string
