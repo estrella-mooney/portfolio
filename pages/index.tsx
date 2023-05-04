@@ -1,47 +1,15 @@
-// import getPosts from './api/getPosts'
 import Head from 'next/head'
 import { BsFillMoonStarsFill } from 'react-icons/bs'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import Intro from './Components/Intro'
 import Projects from './Components/Projects'
 
-export async function getPosts() {
-  console.log('hello is anything even working?')
-  const res = await fetch('http://localhost:3000/api/getPosts')
-  if (!res.ok) {
-    console.log('Response status', res.status)
-    throw new Error('Failed to retrieve posts')
-  }
-  const data = await res.json()
-  console.log('API response:', data)
-  return data
+interface Project {
+  title: string
+  description: string
 }
-
-export default async function Home() {
+export default function Home({ data }: { data: Project[] }) {
   const [darkMode, setDarkMode] = useState(true)
-  const [posts, setPosts] = useState([])
-
-  const data: {
-    id: number
-    title: string
-    content: string
-    tech_used: string
-    reflection: string
-  }[] = await getPosts()
-  console.log('Received data:', data)
-
-  // useEffect(() => {
-  //   async function fetchPosts() {
-  //     try {
-  //       const data = await getPosts()
-  //       setPosts(data)
-  //     } catch (error) {
-  //       console.error(error)
-  //     }
-  //   }
-
-  //   fetchPosts()
-  // }, [])
 
   return (
     <div className={darkMode ? 'dark' : ''}>
@@ -71,8 +39,20 @@ export default async function Home() {
           </nav>
         </section>
         <Intro />
-        <Projects />
+        <Projects data={data} />
+        {/* <Projects /> */}
       </main>
     </div>
   )
+}
+
+export async function getServerSideProps() {
+  const res = await fetch('http://localhost:3000/api/getPosts')
+  const data = await res.json()
+
+  return {
+    props: {
+      data,
+    },
+  }
 }
