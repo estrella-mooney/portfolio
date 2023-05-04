@@ -39,7 +39,7 @@ function Intro() {
             </div>
           </div>
           <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
-            <Image src={desk} alt="smiling" />
+            <Image src={desk} alt="smiling person with laptop" />
           </div>
         </div>
       </section>
