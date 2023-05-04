@@ -230,7 +230,7 @@ interface ProjectsProps {
 const getProjectLink = (title: string) => {
   switch (title) {
     case 'Wunderlust':
-      return 'https://github.com/kahu-2023/buddy' //----> CHANGE
+      return 'https://github.com/estrella-mooney/wanderLust' //----> CHANGE
     case 'Buddy':
       return 'https://github.com/kahu-2023/buddy"'
     case 'Wisdom Of Zoltash':
@@ -255,61 +255,66 @@ const getProjectImage = (title: string) => {
 
 const Projects: FC<ProjectsProps> = ({ data }) => {
   return (
-    <>
-      <section className="py-10">
-        <div>
-          <p className="font-bold mb-3 text-violet-700 dark:text-amber-300">
-            Projects
-          </p>
-        </div>
-        <ul>
-          {data.map((project) => (
-            <li key={project.title}>
-              <div className="grid lg:grid-cols-3 gap-5 sm:gap-5 mb-36">
-                <div className="bg-indigo-200 dark:hover:bg-gray-600 flex-1 p-7 my-6 rounded-lg max-w-xl hover:shadow-lg transition ease-in-out duration-200 hover:text-contrast-white text-gray-800 dark:bg-gray-700 dark:text-gray-300">
-                  <Image
-                    alt="yes"
-                    src={wanderLust}
-                    width={400}
-                    height={215}
-                    decoding="async"
-                    className="mb-3 rounded-lg"
-                    loading="lazy"
-                  />
-                  <h1 className="text-lg font-semibold mb-5">
-                    {project.title}
-                  </h1>
-                  <p className="font-light mb-5">{project.content}</p>
-                  <p className="mb-5">
-                    <b>Tech Used:</b>
-                  </p>
-                  <p className="mb-5">{project.reflection}</p>
-                  <p>
-                    <b>Reflections:</b>
-                  </p>
-                  <p className="mb-5">{project.reflection}</p>
-                  <div className="flex items-center">
-                    <a href="https://github.com/kahu-2023/buddy" title="GitHub">
-                      {/* SVG code */}
-                    </a>
-                    <div className="pl-1">
-                      <a
-                        href="https://wanderlust-estrella.devacademy.nz/"
-                        title="Buddy"
-                      >
-                        <p className="inline-block">View {project.title}</p>
-                      </a>
-                    </div>
-                  </div>
-                </div>
+    <section className="py-10">
+      <div>
+        <p className="font-bold mb-3 text-violet-700 dark:text-amber-300">
+          Projects
+        </p>
+      </div>
+      <div className="flex flex-wrap">
+        {data.map((project) => (
+          <div
+            key={project.title}
+            className="bg-indigo-200 dark:hover:bg-gray-600 flex-1 p-7 m-3 rounded-lg max-w-xl hover:shadow-lg transition ease-in-out duration-200 hover:text-contrast-white text-gray-800 dark:bg-gray-700 dark:text-gray-300"
+          >
+            <Image
+              alt="yes"
+              src={getProjectImage(project.title)}
+              width={400}
+              height={215}
+              decoding="async"
+              className="mb-3 rounded-lg"
+              loading="lazy"
+            />
+            <h1 className="text-lg font-semibold mb-5">{project.title}</h1>
+            <p className="font-light mb-5">{project.content}</p>
+            <p className="mb-5">
+              <b>Tech Used:</b>
+            </p>
+            <p className="mb-5">{project.tech_used}</p>
+            <p>
+              <b>Reflections:</b>
+            </p>
+            <p className="mb-5">{project.reflection}</p>
+            <div className="flex items-center">
+              <a href={getProjectLink(project.title)} title="GitHub">
+                <svg
+                  aria-hidden="true"
+                  className="octicon octicon-mark-github pr-1"
+                  height="24"
+                  version="1.1"
+                  viewBox="0 0 16 16"
+                  width="24"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                  ></path>
+                </svg>
+              </a>
+              <div className="pl-1">
+                <a
+                  href="https://wanderlust-estrella.devacademy.nz/"
+                  title="Buddy"
+                >
+                  <p className="inline-block">View {project.title}</p>
+                </a>
               </div>
-              <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
-              <p>{project.content}</p>
-            </li>
-          ))}
-        </ul>
-      </section>
-    </>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
   )
 }
 

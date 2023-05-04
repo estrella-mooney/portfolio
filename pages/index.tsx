@@ -6,7 +6,9 @@ import Projects from './Components/Projects'
 
 interface Project {
   title: string
-  description: string
+  content: string
+  tech_used: string
+  reflection: string
 }
 export default function Home({ data }: { data: Project[] }) {
   const [darkMode, setDarkMode] = useState(true)
