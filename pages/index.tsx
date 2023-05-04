@@ -4,6 +4,10 @@ import { useState } from 'react'
 import Intro from './Components/Intro'
 import Projects from './Components/Projects'
 
+async function getPosts() {
+  const res = await fetch('/api/getPosts')
+}
+
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true)
 
