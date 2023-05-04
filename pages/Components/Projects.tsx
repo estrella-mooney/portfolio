@@ -253,7 +253,7 @@ const getProjectImage = (title: string) => {
   }
 }
 
-const Projects: FC<ProjectsProps> = ({ data }) => {
+const Projects: FC<ProjectsProps> = ({ data = [] }) => {
   return (
     <section className="py-10">
       <div>
