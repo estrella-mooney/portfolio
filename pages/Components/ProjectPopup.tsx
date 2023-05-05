@@ -11,7 +11,7 @@ const ProjectPopup: FC<Props> = ({ title, description, onClose }) => {
     <div className="project-popup">
       <div className="project-popup-content">
         <h2>{title}</h2>
-        <p>{description}</p>
+        <p>{}</p>
         <button onClick={onClose}>Close</button>
       </div>
     </div>
