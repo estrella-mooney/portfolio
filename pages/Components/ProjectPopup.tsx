@@ -6,6 +6,8 @@ interface Props {
   onClose: () => void
 }
 
+//This is a test to see if pop ups work
+
 const ProjectPopup: FC<Props> = ({ title, description, onClose }) => {
   return (
     <div className="project-popup">
