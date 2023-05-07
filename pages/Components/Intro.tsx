@@ -39,11 +39,7 @@ function Intro() {
             </div>
           </div>
           <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
-            <Image
-              priority={true}
-              src={desk}
-              alt="smiling person with laptop"
-            />
+            <Image priority={true} src={desk} alt="smiling women with laptop" />
           </div>
         </div>
       </section>
