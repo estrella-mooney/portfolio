@@ -10,7 +10,8 @@ export default async function getPostsAPI(
   try {
     const data = await prisma.post.findMany()
     return res.status(200).json(data)
-  } catch (error) {
-    return res.status(500).json(error)
+  } catch (error: any) {
+    console.error('Error fetching posts:', error.message)
+    return res.status(500).json({ message: 'Internal server error' })
   }
 }
