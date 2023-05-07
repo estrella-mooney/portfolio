@@ -49,7 +49,8 @@ export default function Home({ data }: { data: Project[] }) {
 }
 
 export async function getServerSideProps() {
-  const res = await fetch('http://localhost:3000/api/getPosts')
+  const baseUrl = process.env.BASE_URL // assuming you have set this in your environment variables
+  const res = await fetch(`${baseUrl}/api/getPosts`)
   const data = await res.json()
 
   return {
