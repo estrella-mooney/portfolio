@@ -48,9 +48,34 @@ export default function Home({ data }: { data: Project[] }) {
   )
 }
 
+// export async function getServerSideProps() {
+//   const res = await fetch('http://localhost:3000/api/getPosts')
+//   const data = await res.json()
+
+//   return {
+//     props: {
+//       data,
+//     },
+//   }
+// }
+
 export async function getServerSideProps() {
-  const baseUrl = process.env.BASE_URL // assuming you have set this in your environment variables
-  const res = await fetch(`${baseUrl}/api/getPosts`)
+  let baseUrl = ''
+
+  // Check if we are running on Vercel or localhost
+  if (process.env.NODE_ENV === 'production') {
+    // If we are running on Vercel, use the deployed URL
+    const baseUrl = process.env.BASE_URL || ''
+  } else {
+    // If we are running locally, use the localhost URL
+    baseUrl = 'http://localhost:3000'
+  }
+
+  // Construct the API URL based on the baseUrl
+  const apiURL = `${baseUrl}/api/getPosts`
+
+  // Fetch the data from the API
+  const res = await fetch(apiURL)
   const data = await res.json()
 
   return {
