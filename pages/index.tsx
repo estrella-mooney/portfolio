@@ -65,7 +65,7 @@ export async function getServerSideProps() {
   // Check if we are running on Vercel or localhost
   if (process.env.NODE_ENV === 'production') {
     // If we are running on Vercel, use the deployed URL
-    const baseUrl = process.env.BASE_URL || ''
+    baseUrl = process.env.BASE_URL || ''
   } else {
     // If we are running locally, use the localhost URL
     baseUrl = 'http://localhost:3000'
