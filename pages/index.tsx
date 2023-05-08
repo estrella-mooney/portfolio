@@ -61,28 +61,28 @@ export default function Home({ data }: { data: Project[] }) {
 //   }
 // }
 
-export async function getServerSideProps() {
-  let baseUrl = ''
+// export async function getServerSideProps() {
+//   let baseUrl = ''
 
-  // Check if we are running on Vercel or localhost
-  if (process.env.NODE_ENV === 'production') {
-    // If we are running on Vercel, use the deployed URL
-    baseUrl = process.env.BASE_URL || ''
-  } else {
-    // If we are running locally, use the localhost URL
-    baseUrl = 'http://localhost:3000'
-  }
+//   // Check if we are running on Vercel or localhost
+//   if (process.env.NODE_ENV === 'production') {
+//     // If we are running on Vercel, use the deployed URL
+//     baseUrl = process.env.BASE_URL || ''
+//   } else {
+//     // If we are running locally, use the localhost URL
+//     baseUrl = 'http://localhost:3000'
+//   }
 
-  // Construct the API URL based on the baseUrl
-  const apiURL = `${baseUrl}/api/getPosts`
+//   // Construct the API URL based on the baseUrl
+//   const apiURL = `${baseUrl}/api/getPosts`
 
-  // Fetch the data from the API
-  const res = await fetch(apiURL)
-  const data = await res.json()
+//   // Fetch the data from the API
+//   const res = await fetch(apiURL)
+//   const data = await res.json()
 
-  return {
-    props: {
-      data,
-    },
-  }
-}
+//   return {
+//     props: {
+//       data,
+//     },
+//   }
+// }
