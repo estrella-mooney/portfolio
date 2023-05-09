@@ -3,6 +3,7 @@ import { BsFillMoonStarsFill } from 'react-icons/bs'
 import { useState } from 'react'
 import Intro from './Components/Intro'
 import Projects from './Components/Projects'
+import Footer from './Components/Footer'
 // import IndiProject from './Components/IndiPorject'
 
 interface Project {
@@ -42,7 +43,8 @@ export default function Home({ data }: { data: Project[] }) {
           </nav>
         </section>
         <Intro />
-        <Projects data={data} />
+        <Projects />
+        <Footer />
         {/* <Projects /> */}
         {/* <IndiProject data={data} /> */}
       </main>
