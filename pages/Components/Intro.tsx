@@ -37,14 +37,22 @@ function Intro() {
                     I&apos;m a
                     <span className="text-violet-700 dark:text-amber-300">
                       {' '}
-                      fullstack developer{' '}
+                      Fullstack Developer{' '}
                     </span>
                     based in New Zealand.
                   </li>
 
                   <li>
                     I just finished a 17 week Full Stack Software Developer
-                    bootcamp @ Dev Academy Aotearoa
+                    Bootcamp @{' '}
+                    <span>
+                      <a
+                        href="https://devacademy.co.nz/"
+                        className=" hover:dark:text-amber-300 hover:text-violet-700 underline-none"
+                      >
+                        Dev Academy Aotearoa, Wellington.
+                      </a>
+                    </span>
                   </li>
                 </ul>
               </div>
