@@ -8,16 +8,28 @@ function Intro() {
       <section className="">
         <div className="grid max-w-screen-xl px-4 py-8 mx-auto gap-x-8 lg:gap-8 xl:gap-0 lg:py-2 lg:grid-cols-12">
           <div className=" place-self-center lg:col-span-7">
-            {/* <h1 className=" font-bold mb-3 text-teal-500">
-                Hi, my
-                <br />
-                name is <b>Estrella</b>
-              </h1> */}
+            <div className="relative">
+              <div className="bee-wrapper">
+                <div className="bee-container">
+                  <div className="wrapper">
+                    <div className="bee">
+                      <div className="bee-body">
+                        <div className="blink"></div>
+                        <div className="mouth"></div>
+                        <div className="antenae"></div>
+                        <div className="bee-left"></div>
+                        <div className="bee-right"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div className=" text-black ">
-              <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
+              <h1 className="max-w-2xl mb-6 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white text-gray-900">
                 Hi, my
-                <br />
-                name is Estrella
+                <br /> name is Estrella
               </h1>
               <div className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
                 <ul>
