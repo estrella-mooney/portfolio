@@ -19,7 +19,7 @@ export default function MainProjects() {
             </p>
           </div>
           <div className=" mb-10 rounded-lg hover:shadow-lg transition ease-in-out duration-200 hover:text-contrast-white text-gray-800 dark:bg-gray-700 dark:text-gray-300 bg-indigo-100 dark:hover:bg-gray-600 relative py-10">
-            <div className="lg:mt-4 flex flex-col lg:flex-row items-start justify-between max-w-7xl mx-auto px-5 xl:px-0">
+            <div className="lg:mt-4 xl:mt-4 flex flex-col lg:flex-row items-start justify-between max-w-7xl mx-auto px-5 xl:px-0">
               <div className="w-full lg:w-7/12 bg-cover relative my-auto">
                 <div className="flex items-center justify-center w-full h-full relative">
                   <Image
