@@ -21,7 +21,7 @@ export default function Projects() {
       <section className="">
         <div>
           <p className=" font-bold mb-3 text-violet-700 dark:text-amber-300">
-            More Projects
+            Team Projects
           </p>
         </div>
 
