@@ -2,8 +2,9 @@ import Head from 'next/head'
 import { BsFillMoonStarsFill } from 'react-icons/bs'
 import { useState } from 'react'
 import Intro from './Components/Intro'
-import Projects from './Components/Projects'
+import Projects from './Components/SecondProjects'
 import Footer from './Components/Footer'
+import MainProjects from './Components/MainProjects'
 // import IndiProject from './Components/IndiPorject'
 
 interface Project {
@@ -43,6 +44,7 @@ export default function Home({ data }: { data: Project[] }) {
           </nav>
         </section>
         <Intro />
+        <MainProjects />
         <Projects />
         <Footer />
         {/* <Projects /> */}
