@@ -5,7 +5,7 @@ import Intro from './Components/Intro'
 import Projects from './Components/SecondProjects'
 import Footer from './Components/Footer'
 import MainProjects from './Components/MainProjects'
-// import IndiProject from './Components/IndiPorject'
+import About from './Components/About'
 
 interface Project {
   title: string
@@ -44,49 +44,11 @@ export default function Home({ data }: { data: Project[] }) {
           </nav>
         </section>
         <Intro />
+        {/* <About /> */}
         <MainProjects />
         <Projects />
         <Footer />
-        {/* <Projects /> */}
-        {/* <IndiProject data={data} /> */}
       </main>
     </div>
   )
 }
-
-// export async function getServerSideProps() {
-//   const res = await fetch('http://localhost:3000/api/getPosts')
-//   const data = await res.json()
-
-//   return {
-//     props: {
-//       data,
-//     },
-//   }
-// }
-
-// export async function getServerSideProps() {
-//   let baseUrl = ''
-
-//   // Check if we are running on Vercel or localhost
-//   if (process.env.NODE_ENV === 'production') {
-//     // If we are running on Vercel, use the deployed URL
-//     baseUrl = process.env.BASE_URL || ''
-//   } else {
-//     // If we are running locally, use the localhost URL
-//     baseUrl = 'http://localhost:3000'
-//   }
-
-//   // Construct the API URL based on the baseUrl
-//   const apiURL = `${baseUrl}/api/getPosts`
-
-//   // Fetch the data from the API
-//   const res = await fetch(apiURL)
-//   const data = await res.json()
-
-//   return {
-//     props: {
-//       data,
-//     },
-//   }
-// }

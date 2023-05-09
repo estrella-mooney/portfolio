@@ -22,7 +22,7 @@ export default function MainProjects() {
   )
   return (
     <>
-      <section className="py-10">
+      <section className="py-6 mt-10">
         <div>
           <p className=" font-bold mb-3 text-violet-700 dark:text-amber-300">
             Projects
