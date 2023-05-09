@@ -18,6 +18,57 @@ export default function MainProjects() {
               Projects
             </p>
           </div>
+          <div className=" mb-10 rounded-lg hover:shadow-lg transition ease-in-out duration-200 hover:text-contrast-white text-gray-800 dark:bg-gray-700 dark:text-gray-300 bg-indigo-100 dark:hover:bg-gray-600 relative py-10">
+            <div className="flex flex-col lg:flex-row items-start justify-between max-w-7xl mx-auto px-5 xl:px-0">
+              <div className="w-full lg:w-7/12 bg-cover relative my-auto">
+                <div className="flex items-center justify-center w-full h-full relative">
+                  <Image
+                    alt="testHello"
+                    width="600"
+                    height="600"
+                    src={buddy}
+                    decoding="async"
+                    className="mb-3 rounded-lg"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div className="w-full lg:w-5/12 mt-10 lg:mt-0 lg:pl-5 relative z-10 md:pr-0 lg:pr-10">
+                <div className="flex flex-col items-start justify-start">
+                  <p className=" mb-5 mt-1 text-center lg:text-left">
+                    Week Nine of Dev Academy, Final group project
+                  </p>
+                  <p className="text-4xl font-medium text-center lg:text-left leading-snug font-serif">
+                    Buddy
+                  </p>
+
+                  <p className="mb-5">
+                    Our final project at the Dev Academy Bootcamp in 2023 was
+                    developed by our team of 6 and the React app designed to
+                    help newcomers in Wellington, NZ connect with locals for
+                    cultural immersion and guidance. The MVP for this app was
+                    developed with React, React-Redux, Auth0, Node.js, Express,
+                    SQLite3, utilizing everything we had learned over those last
+                    nine weeks. Passionate about improving the experience of
+                    newcomers in New Zealand, my classmate and I continue to
+                    work on Buddy, we&apos;re dedicated to refining the app,
+                    fixing bugs, and adding new features to make it a more
+                    useful tool for people in the real world.
+                  </p>
+
+                  <div className="flex items-center">
+                    <a
+                      href="https://github.com/kahu-2023/buddy"
+                      title="GitHub"
+                      target="_blank"
+                    >
+                      <GithubIcon darkMode={darkMode} />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div className=" mb-10 rounded-lg hover:shadow-lg transition ease-in-out duration-200 hover:text-contrast-white text-gray-800 dark:bg-gray-700 dark:text-gray-300 bg-indigo-100 dark:hover:bg-gray-600 relative py-10">
             <div className="flex flex-col lg:flex-row items-start justify-between max-w-7xl mx-auto px-5 xl:px-0">
@@ -75,58 +126,6 @@ export default function MainProjects() {
                         <p className="inline-block">View Wunderlust</p>
                       </a>
                     </div> */}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className=" mb-10 rounded-lg hover:shadow-lg transition ease-in-out duration-200 hover:text-contrast-white text-gray-800 dark:bg-gray-700 dark:text-gray-300 bg-indigo-100 dark:hover:bg-gray-600 relative py-10">
-            <div className="flex flex-col lg:flex-row items-start justify-between max-w-7xl mx-auto px-5 xl:px-0">
-              <div className="w-full lg:w-7/12 bg-cover relative my-auto">
-                <div className="flex items-center justify-center w-full h-full relative">
-                  <Image
-                    alt="testHello"
-                    width="600"
-                    height="600"
-                    src={buddy}
-                    decoding="async"
-                    className="mb-3 rounded-lg"
-                    loading="lazy"
-                  />
-                </div>
-              </div>
-              <div className="w-full lg:w-5/12 mt-10 lg:mt-0 lg:pl-5 relative z-10 md:pr-0 lg:pr-10">
-                <div className="flex flex-col items-start justify-start">
-                  <p className=" mb-5 mt-1 text-center lg:text-left">
-                    Week Nine of Dev Academy, Final group project
-                  </p>
-                  <p className="text-4xl font-medium text-center lg:text-left leading-snug font-serif">
-                    Buddy
-                  </p>
-
-                  <p className="mb-5">
-                    Our final project at the Dev Academy Bootcamp in 2023 was
-                    developed by our team of 6 and the React app designed to
-                    help newcomers in Wellington, NZ connect with locals for
-                    cultural immersion and guidance. The MVP for this app was
-                    developed with React, React-Redux, Auth0, Node.js, Express,
-                    SQLite3, utilizing everything we had learned over those last
-                    nine weeks. Passionate about improving the experience of
-                    newcomers in New Zealand, my classmate and I continue to
-                    work on Buddy, we&apos;re dedicated to refining the app,
-                    fixing bugs, and adding new features to make it a more
-                    useful tool for people in the real world.
-                  </p>
-
-                  <div className="flex items-center">
-                    <a
-                      href="https://github.com/kahu-2023/buddy"
-                      title="GitHub"
-                      target="_blank"
-                    >
-                      <GithubIcon darkMode={darkMode} />
-                    </a>
                   </div>
                 </div>
               </div>
