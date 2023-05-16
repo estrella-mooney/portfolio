@@ -29,16 +29,17 @@ export default function Home({ data }: { data: Project[] }) {
         <section className="mb-24 sm:mb-16">
           <nav className="py-10 mb-4 flex justify-end  dark:text-white">
             {/* <h1 className="font-semibold text-2xl">Estrella</h1> */}
-            <ul className=" flex items-center">
-              <li className="pr-5">
-                <a href="../Estrella CV.pdf" target="_blank">
-                  <button>CV</button>
+            <ul className="flex items-center space-x-2">
+              <button className="pr-2 bg-amber-300 hover:bg-gray-500 dark:text-gray-900 dark:hover:text-white text-white font-bold py-2 px-2 rounded">
+                <a href="../Estrella-CV.pdf" target="_blank">
+                  CV
                 </a>
-              </li>
+              </button>
+
               <li>
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
-                  className=" cursor-pointer text-2xl"
+                  className="cursor-pointer text-2xl"
                 />
               </li>
             </ul>
