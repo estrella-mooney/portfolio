@@ -27,11 +27,12 @@ export default function Home({ data }: { data: Project[] }) {
       </Head>
       <main className="  bg-indigo-50  dark:bg-gray-900  min-h-screen sm:px-10 md:px-30 lg:px-48 xl:px-10 2xl:px-7">
         <section className="mb-24 sm:mb-16">
-          <nav className="py-10 mb-4 flex justify-end  dark:text-white">
+          <nav className="xl:py-10  flex justify-end  dark:text-white">
             {/* <h1 className="font-semibold text-2xl">Estrella</h1> */}
-            <ul className="flex items-center space-x-2">
+
+            <ul className="flex items-center px-4 py-8 gap-x-3 lg:gap-8 xl:gap-3 lg:py-2 ">
               <button className="pr-2 bg-amber-300 hover:bg-gray-500 dark:text-gray-900 dark:hover:text-white text-white font-bold py-2 px-2 rounded">
-                <a href="../Estrella-CV.pdf" target="_blank">
+                <a href="../EstrellaCV.pdf" target="_blank">
                   CV
                 </a>
               </button>
@@ -45,6 +46,7 @@ export default function Home({ data }: { data: Project[] }) {
             </ul>
           </nav>
         </section>
+
         {/* <Navbar /> */}
         <Intro />
         <MainProjects />

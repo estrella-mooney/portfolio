@@ -2,9 +2,11 @@ export default function Footer() {
   return (
     <>
       <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-        <span className="block text-sm text-gray-900 sm:text-center dark:text-gray-400">
-          Built and designed by Estrella with Next.js & Tailwind CSS
-        </span>
+        <div className="text-center">
+          <span className="block text-sm text-gray-900 sm:inline-block sm:text-center dark:text-gray-400">
+            Built and designed by Estrella with Next.js & Tailwind CSS
+          </span>
+        </div>
         <div className="flex space-x-4 justify-center mt-5">
           {/* Email */}
           <a href="mailto:thestarshine@protonmail.com" title="Email">
@@ -57,7 +59,7 @@ export default function Footer() {
         </div>
         <div className="flex justify-center mt-5 md:hidden">
           <button className="pr-2 bg-amber-300 hover:bg-gray-500 dark:text-gray-900 dark:hover:text-white text-white font-bold py-2 px-2 rounded">
-            <a href="../Estrella-CV.pdf" target="_blank">
+            <a href="../EstrellaCV.pdf" target="_blank">
               My CV
             </a>
           </button>
