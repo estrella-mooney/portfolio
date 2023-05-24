@@ -39,7 +39,7 @@ function Intro() {
                       {' '}
                       Fullstack Developer{' '}
                     </span>
-                    based in New Zealand.
+                    based in Aotearoa New Zealand.
                   </li>
 
                   <li>
@@ -50,7 +50,7 @@ function Intro() {
                         href="https://devacademy.co.nz/"
                         className=" hover:dark:text-amber-300 hover:text-violet-700 underline-none"
                       >
-                        Dev Academy Aotearoa, Wellington.
+                        Dev Academy Wellington.
                       </a>
                     </span>
                   </li>

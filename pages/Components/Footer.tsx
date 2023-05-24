@@ -55,6 +55,13 @@ export default function Footer() {
             </svg>
           </a>
         </div>
+        <div className="flex justify-center mt-5 md:hidden">
+          <button className="pr-2 bg-amber-300 hover:bg-gray-500 dark:text-gray-900 dark:hover:text-white text-white font-bold py-2 px-2 rounded">
+            <a href="../Estrella-CV.pdf" target="_blank">
+              My CV
+            </a>
+          </button>
+        </div>
       </div>
     </>
   )
