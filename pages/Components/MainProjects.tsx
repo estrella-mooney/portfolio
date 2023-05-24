@@ -12,9 +12,9 @@ export default function MainProjects() {
   return (
     <>
       <div className={darkMode ? 'dark' : ''}>
-        <section className="py-6 mt-10">
+        <section className="py-6 mt-10 ">
           <div>
-            <p className=" font-bold mb-3 text-violet-700 dark:text-amber-300">
+            <p className=" sm:px-4 font-bold mb-3 text-violet-700 dark:text-amber-300">
               Dev Academy Projects
             </p>
           </div>
@@ -44,19 +44,17 @@ export default function MainProjects() {
 
                   <p className="mb-3 tracking-wide">
                     As our final project for the Dev Academy Bootcamp, our team
-                    of six developed a React app It was created to assist
+                    of six developed a React app. It was created to assist
                     newcomers in Wellington, New Zealand in connecting with
                     locals for guidance and cultural immersion. React,
                     React-Redux, Auth0, Node.js, Express, and SQLite3 were all
                     used to create the MVP for this project, utilising all we
-                    had learned over the previous nine weeks. My classmate and I
-                    continue to work on Buddy because we are passionate about
-                    enhancing the experience of newcomers in New Zealand.
+                    had learned over the previous nine weeks.
                   </p>
 
                   <div className="flex items-center">
                     <a
-                      href="https://github.com/kahu-2023/buddy"
+                      href="https://github.com/estrella-mooney/DA-buddy"
                       title="GitHub"
                       target="_blank"
                     >
@@ -104,7 +102,7 @@ export default function MainProjects() {
                     saved hikes. This will also allow users to upload photos and
                     screenshots of their favorite locations, making it an
                     all-in-one solution for organizing their hiking goals and
-                    experiences
+                    experiences.
                   </p>
 
                   <div className="flex items-center">
