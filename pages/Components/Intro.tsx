@@ -39,7 +39,7 @@ function Intro() {
                       {' '}
                       Fullstack Developer{' '}
                     </span>
-                    based in Aotearoa New Zealand.
+                    based in New Zealand.
                   </li>
 
                   <li>
